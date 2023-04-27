@@ -1,0 +1,26 @@
+C:\Users\amalz\source\repos\amal\amal\bin\Debug\amal.exe.config
+C:\Users\amalz\source\repos\amal\amal\bin\Debug\amal.exe
+C:\Users\amalz\source\repos\amal\amal\bin\Debug\amal.pdb
+C:\Users\amalz\source\repos\amal\amal\bin\Debug\Guna.UI2.dll
+C:\Users\amalz\source\repos\amal\amal\obj\Debug\amal.csproj.AssemblyReference.cache
+C:\Users\amalz\source\repos\amal\amal\obj\Debug\amal.csproj.SuggestedBindingRedirects.cache
+C:\Users\amalz\source\repos\amal\amal\obj\Debug\amal.Main.resources
+C:\Users\amalz\source\repos\amal\amal\obj\Debug\amal.Properties.Resources.resources
+C:\Users\amalz\source\repos\amal\amal\obj\Debug\amal.csproj.GenerateResource.cache
+C:\Users\amalz\source\repos\amal\amal\obj\Debug\amal.csproj.CoreCompileInputs.cache
+C:\Users\amalz\source\repos\amal\amal\obj\Debug\amal.csproj.CopyComplete
+C:\Users\amalz\source\repos\amal\amal\obj\Debug\amal.exe
+C:\Users\amalz\source\repos\amal\amal\obj\Debug\amal.pdb
+C:\Users\amalz\OneDrive\سطح المكتب\donem-projesi-amalabdi66\amal\bin\Debug\amal.exe.config
+C:\Users\amalz\OneDrive\سطح المكتب\donem-projesi-amalabdi66\amal\bin\Debug\amal.exe
+C:\Users\amalz\OneDrive\سطح المكتب\donem-projesi-amalabdi66\amal\bin\Debug\amal.pdb
+C:\Users\amalz\OneDrive\سطح المكتب\donem-projesi-amalabdi66\amal\bin\Debug\Guna.UI2.dll
+C:\Users\amalz\OneDrive\سطح المكتب\donem-projesi-amalabdi66\amal\obj\Debug\amal.csproj.AssemblyReference.cache
+C:\Users\amalz\OneDrive\سطح المكتب\donem-projesi-amalabdi66\amal\obj\Debug\amal.csproj.SuggestedBindingRedirects.cache
+C:\Users\amalz\OneDrive\سطح المكتب\donem-projesi-amalabdi66\amal\obj\Debug\amal.Main.resources
+C:\Users\amalz\OneDrive\سطح المكتب\donem-projesi-amalabdi66\amal\obj\Debug\amal.Properties.Resources.resources
+C:\Users\amalz\OneDrive\سطح المكتب\donem-projesi-amalabdi66\amal\obj\Debug\amal.csproj.GenerateResource.cache
+C:\Users\amalz\OneDrive\سطح المكتب\donem-projesi-amalabdi66\amal\obj\Debug\amal.csproj.CoreCompileInputs.cache
+C:\Users\amalz\OneDrive\سطح المكتب\donem-projesi-amalabdi66\amal\obj\Debug\amal.csproj.CopyComplete
+C:\Users\amalz\OneDrive\سطح المكتب\donem-projesi-amalabdi66\amal\obj\Debug\amal.exe
+C:\Users\amalz\OneDrive\سطح المكتب\donem-projesi-amalabdi66\amal\obj\Debug\amal.pdb
