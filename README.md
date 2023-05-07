@@ -1,4 +1,4 @@
-https://drawsql.app/teams/amal-10/diagrams/amal       (veritabanı tabloları)
+https://drawsql.app/teams/amal-10/diagrams/veritabani-tablolari       (veritabanı tabloları)
 (Amac) 
 Satış yönetimi proje programlamasına ihtiyacınız var çünkü satın alma ve satış, depolama ve üretim süreçlerinin verimliliğini artırmaya yardımcı olabilir. Ve sistem iyi çalıştığında zamandan ve emekten tasarruf edebilir ve müşteri deneyimini iyileştirebilir. Sistem aynı zamanda iş performansını izleyebilir, satış ve stok verilerini analiz edebilir, bu verilerden hareketle performans ve karlılığı artıracak doğru kararlar alınabilir. Sonuç olarak, bir satış yönetimi projesini programlamak, operasyonları kolaylaştırmaya, performansı artırmaya ve müşteri deneyimini iyileştirmeye yardımcı olabilir ve iyi ve ödüllendirici bir proje olabilir.
 (özellikleri)
