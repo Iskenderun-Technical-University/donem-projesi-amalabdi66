@@ -1,0 +1,15 @@
+C:\Users\amalz\OneDrive\سطح المكتب\donem-projesi-amalabdi66\satışş\bin\Debug\satışş.exe.config
+C:\Users\amalz\OneDrive\سطح المكتب\donem-projesi-amalabdi66\satışş\bin\Debug\satışş.exe
+C:\Users\amalz\OneDrive\سطح المكتب\donem-projesi-amalabdi66\satışş\bin\Debug\satışş.pdb
+C:\Users\amalz\OneDrive\سطح المكتب\donem-projesi-amalabdi66\satışş\bin\Debug\Bunifu_UI_v1.52.dll
+C:\Users\amalz\OneDrive\سطح المكتب\donem-projesi-amalabdi66\satışş\obj\Debug\satışş.csproj.AssemblyReference.cache
+C:\Users\amalz\OneDrive\سطح المكتب\donem-projesi-amalabdi66\satışş\obj\Debug\satışş.Form1.resources
+C:\Users\amalz\OneDrive\سطح المكتب\donem-projesi-amalabdi66\satışş\obj\Debug\satışş.Properties.Resources.resources
+C:\Users\amalz\OneDrive\سطح المكتب\donem-projesi-amalabdi66\satışş\obj\Debug\satışş.csproj.GenerateResource.cache
+C:\Users\amalz\OneDrive\سطح المكتب\donem-projesi-amalabdi66\satışş\obj\Debug\satışş.csproj.CoreCompileInputs.cache
+C:\Users\amalz\OneDrive\سطح المكتب\donem-projesi-amalabdi66\satışş\obj\Debug\satışş.csproj.CopyComplete
+C:\Users\amalz\OneDrive\سطح المكتب\donem-projesi-amalabdi66\satışş\obj\Debug\satışş.exe
+C:\Users\amalz\OneDrive\سطح المكتب\donem-projesi-amalabdi66\satışş\obj\Debug\satışş.pdb
+C:\Users\amalz\OneDrive\سطح المكتب\donem-projesi-amalabdi66\satışş\obj\Debug\satışş.PL.FRM_HOME.resources
+C:\Users\amalz\OneDrive\سطح المكتب\donem-projesi-amalabdi66\satışş\bin\Debug\Guna.UI2.dll
+C:\Users\amalz\OneDrive\سطح المكتب\donem-projesi-amalabdi66\satışş\obj\Debug\satışş.PL.FRM_Cat.resources

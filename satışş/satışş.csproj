@@ -33,8 +33,17 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.52">
+      <HintPath>..\..\..\..\Downloads\Bunifu_UI_v1.52.dll</HintPath>
+    </Reference>
+    <Reference Include="Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
+      <HintPath>..\packages\Guna.UI2.WinForms.2.0.4.4\lib\net472\Guna.UI2.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -52,10 +61,28 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="PL\FRM_Cat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\FRM_Cat.Designer.cs">
+      <DependentUpon>FRM_Cat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\FRM_HOME.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\FRM_HOME.Designer.cs">
+      <DependentUpon>FRM_HOME.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\FRM_Cat.resx">
+      <DependentUpon>FRM_Cat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\FRM_HOME.resx">
+      <DependentUpon>FRM_HOME.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -65,7 +92,9 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -78,6 +107,126 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="BL\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel-close-10373.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-cancel-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-new-message-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-cancel-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-reduce-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-moleskine-icon-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-user-16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-user-80.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menu-button-of-three-horizontal-lines.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-home-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-categorize-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-supplier-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-open-box-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-queue-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-sales-performance-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-combo-chart.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-slice-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-users-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-settings-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-categorize-241.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\categories.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\category.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\handle-with-care-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cart-line-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\users-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\box-package-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\financial-statement-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\categories1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\financial-statement-icon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\financial-statement-icon2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-add-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-add-501.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-users-301.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-user-161.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\businessman-1948 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-male-user-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4a914054d1a9f9e136ba042d8d6a5385.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4a914054d1a9f9e136ba042d8d6a53851.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4a914054d1a9f9e136ba042d8d6a53852.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
