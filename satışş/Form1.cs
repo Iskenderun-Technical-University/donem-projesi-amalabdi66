@@ -10,38 +10,46 @@ using System.Windows.Forms;
 
 namespace satışş
 {
-    public partial class Form1 : Form
+    public partial class Main : Form
     {
-        public Form1()
+        //init Form
+        
+        PL.FRM_Cat frm_cat = new PL.FRM_Cat();
+        PL.FRM_HOME frm_home = new PL.FRM_HOME();
+        public Main()
         {
             InitializeComponent();
         }
         //exit app
         private void bunifuImageButton1_Click(object sender, EventArgs e)
         {
-            Environment.Exit(0);
+            this.Close();
             
 
         }
 
         private void pan_navbar_Paint(object sender, PaintEventArgs e)
         {
-
+           
         }
 
         private void bunifuImageButton6_Click(object sender, EventArgs e)
         {
-
+           
         }
-
+        //load home 
+        //اسمه btn_home
         private void bunifuImageButton6_Click_1(object sender, EventArgs e)
         {
+
+           
+
 
         }
 
         private void label4_Click(object sender, EventArgs e)
         {
-
+           
         }
 
         private void bunifuImageButton7_Click(object sender, EventArgs e)
@@ -95,9 +103,12 @@ namespace satışş
         {
 
         }
-
+        //btn_cat
+        //load cat
         private void bunifuImageButton12_Click(object sender, EventArgs e)
         {
+            con.Controls.Clear();
+            con.Controls.Add(frm_cat.pan_cat);
 
         }
 
@@ -119,6 +130,22 @@ namespace satışş
 
 
             }
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            con.Controls.Clear();
+            con.Controls.Add(frm_home.pn_home); 
+        }
+
+        private void label11_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void bunifuCards1_Paint(object sender, PaintEventArgs e)
+        {
 
         }
     }

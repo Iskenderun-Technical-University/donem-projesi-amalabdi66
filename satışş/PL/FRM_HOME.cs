@@ -36,5 +36,10 @@ namespace satışş.PL
         {
 
         }
+
+        private void pn_home_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

@@ -163,6 +163,16 @@ namespace satışş.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap category1 {
+            get {
+                object obj = ResourceManager.GetObject("category1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap financial_statement_icon {
             get {
                 object obj = ResourceManager.GetObject("financial-statement-icon", resourceCulture);
@@ -256,6 +266,16 @@ namespace satışş.Properties {
         internal static System.Drawing.Bitmap icons8_categorize_241 {
             get {
                 object obj = ResourceManager.GetObject("icons8-categorize-241", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_categorize_242 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-categorize-242", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -443,9 +463,29 @@ namespace satışş.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap research_4_32 {
+            get {
+                object obj = ResourceManager.GetObject("research-4-32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap users_icon {
             get {
                 object obj = ResourceManager.GetObject("users-icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap white_flag_symbol {
+            get {
+                object obj = ResourceManager.GetObject("white-flag-symbol", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
