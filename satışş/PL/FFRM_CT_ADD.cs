@@ -16,8 +16,7 @@ namespace satışş.PL
         SATIŞEntities db = new SATIŞEntities();
         TB_CAT tb_cat = new TB_CAT();
         BL.Methods methods = new BL.Methods();
-        Toast toast = new Toast();
-        Dialog dialog = new Dialog();
+        PL.FRM_Cat frm_cat = new FRM_Cat();
         public int id;
         public FFRM_CT_ADD()
         {
@@ -32,6 +31,8 @@ namespace satışş.PL
 
         private void btn_add_Click(object sender, EventArgs e)
         {//check if add or edit
+            Toast toast = new Toast();
+            Dialog dialog = new Dialog();
             if (edt_name.Text == "")
             {
                 dialog.Width = this.Width;
@@ -42,6 +43,7 @@ namespace satışş.PL
             {//chrck if add or edit
                 if (id == 0)
                 {//Add
+                   
                     pic_cover.Image.Save(methods.ma, System.Drawing.Imaging.ImageFormat.Jpeg);
                     tb_cat.CAT_Name = edt_name.Text;
                     tb_cat.CAT_Cover = methods.convert_byte();
@@ -50,13 +52,26 @@ namespace satışş.PL
 
                     toast.txt_caption.Text = "Yeni ürün eklendi";
                     toast.Show();
+                    db = new SATIŞEntities();
+                    frm_cat.gridControl1.DataSource = db.TB_CAT.ToList();
+                    this.Close();
+
+
+
                 }
                 else
                 {
                     //Edit
                 }
-           
 
+                
+
+            }
+        }
+
+        private void btn_close_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

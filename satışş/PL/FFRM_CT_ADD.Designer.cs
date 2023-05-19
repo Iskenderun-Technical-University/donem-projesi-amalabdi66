@@ -32,10 +32,8 @@ namespace satışş.PL
             this.label1 = new System.Windows.Forms.Label();
             this.edt_name = new System.Windows.Forms.TextBox();
             this.pic_cover = new System.Windows.Forms.PictureBox();
-            this.btn_close = new Bunifu.Framework.UI.BunifuImageButton();
             this.btn_add = new Guna.UI2.WinForms.Guna2Button();
             ((System.ComponentModel.ISupportInitialize)(this.pic_cover)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btn_close)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -54,34 +52,19 @@ namespace satışş.PL
             this.edt_name.Location = new System.Drawing.Point(216, 135);
             this.edt_name.Multiline = true;
             this.edt_name.Name = "edt_name";
-            this.edt_name.Size = new System.Drawing.Size(330, 53);
+            this.edt_name.Size = new System.Drawing.Size(287, 53);
             this.edt_name.TabIndex = 3;
             // 
             // pic_cover
             // 
             this.pic_cover.Image = global::satışş.Properties.Resources.category1;
-            this.pic_cover.Location = new System.Drawing.Point(216, 206);
+            this.pic_cover.Location = new System.Drawing.Point(216, 215);
             this.pic_cover.Name = "pic_cover";
-            this.pic_cover.Size = new System.Drawing.Size(330, 265);
+            this.pic_cover.Size = new System.Drawing.Size(287, 174);
             this.pic_cover.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pic_cover.TabIndex = 4;
             this.pic_cover.TabStop = false;
             this.pic_cover.Click += new System.EventHandler(this.pictureBox1_Click);
-            // 
-            // btn_close
-            // 
-            this.btn_close.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_close.BackColor = System.Drawing.Color.Transparent;
-            this.btn_close.Image = global::satışş.Properties.Resources._4a914054d1a9f9e136ba042d8d6a53852;
-            this.btn_close.ImageActive = null;
-            this.btn_close.Location = new System.Drawing.Point(699, 0);
-            this.btn_close.Margin = new System.Windows.Forms.Padding(2);
-            this.btn_close.Name = "btn_close";
-            this.btn_close.Size = new System.Drawing.Size(56, 31);
-            this.btn_close.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btn_close.TabIndex = 1;
-            this.btn_close.TabStop = false;
-            this.btn_close.Zoom = 10;
             // 
             // btn_add
             // 
@@ -90,12 +73,12 @@ namespace satışş.PL
             this.btn_add.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btn_add.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btn_add.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_add.FillColor = System.Drawing.Color.Silver;
+            this.btn_add.FillColor = System.Drawing.Color.Coral;
             this.btn_add.Font = new System.Drawing.Font("Lucida Sans Unicode", 12F, System.Drawing.FontStyle.Bold);
             this.btn_add.ForeColor = System.Drawing.Color.White;
-            this.btn_add.Location = new System.Drawing.Point(595, 505);
+            this.btn_add.Location = new System.Drawing.Point(533, 422);
             this.btn_add.Name = "btn_add";
-            this.btn_add.Size = new System.Drawing.Size(148, 65);
+            this.btn_add.Size = new System.Drawing.Size(157, 65);
             this.btn_add.TabIndex = 26;
             this.btn_add.Text = " Ekle";
             this.btn_add.Click += new System.EventHandler(this.btn_add_Click);
@@ -105,27 +88,23 @@ namespace satışş.PL
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(755, 582);
+            this.ClientSize = new System.Drawing.Size(702, 499);
             this.Controls.Add(this.btn_add);
             this.Controls.Add(this.pic_cover);
             this.Controls.Add(this.edt_name);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.btn_close);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FFRM_CT_ADD";
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.TopMost = true;
             ((System.ComponentModel.ISupportInitialize)(this.pic_cover)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btn_close)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private Bunifu.Framework.UI.BunifuImageButton btn_close;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox edt_name;
         private System.Windows.Forms.PictureBox pic_cover;

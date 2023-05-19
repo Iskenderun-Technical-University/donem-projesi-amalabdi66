@@ -45,6 +45,7 @@ namespace satışş.EPL
             this.txt_caption.TabIndex = 4;
             this.txt_caption.Text = "Mesaj";
             this.txt_caption.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.txt_caption.Click += new System.EventHandler(this.txt_caption_Click);
             // 
             // timer1
             // 

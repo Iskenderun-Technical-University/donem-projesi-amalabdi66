@@ -50,3 +50,5 @@ C:\Users\amalz\OneDrive\سطح المكتب\donem-projesi-amalabdi66\satışş\b
 C:\Users\amalz\OneDrive\سطح المكتب\donem-projesi-amalabdi66\satışş\bin\Debug\DevExpress.Office.v22.2.Core.xml
 C:\Users\amalz\OneDrive\سطح المكتب\donem-projesi-amalabdi66\satışş\obj\Debug\satışş.exe.licenses
 C:\Users\amalz\OneDrive\سطح المكتب\donem-projesi-amalabdi66\satışş\obj\Debug\satışş.PL.FFRM_CT_ADD.resources
+C:\Users\amalz\OneDrive\سطح المكتب\donem-projesi-amalabdi66\satışş\obj\Debug\satışş.EPL.Dialog.resources
+C:\Users\amalz\OneDrive\سطح المكتب\donem-projesi-amalabdi66\satışş\obj\Debug\satışş.EPL.Toast.resources

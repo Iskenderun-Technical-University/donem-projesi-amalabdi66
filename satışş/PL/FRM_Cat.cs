@@ -8,11 +8,17 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.Entity;
+using satışş.EPL;
 
 namespace satışş.PL
 {
     public partial class FRM_Cat : Form
+
     {
+        SATIŞEntities db = new SATIŞEntities();
+        TB_CAT tB_cat = new TB_CAT();
+        int id;
+         
         public FRM_Cat()
         {
             InitializeComponent();
@@ -27,19 +33,88 @@ namespace satışş.PL
             }, System.Threading.Tasks.TaskScheduler.FromCurrentSynchronizationContext());
         }
 
-        private void guna2Button1_Click(object sender, EventArgs e)
+
+
+
+        //delete
+        private void btn_delete_Click(object sender, EventArgs e)
         {
+            
+
+           
+ 
+
+
+        }
+        private void update_data()
+        {
+            throw new NotImplementedException();
+            SATIŞEntities db = new SATIŞEntities();
+            gridControl1.DataSource = db.TB_CAT.ToList();
 
         }
 
         private void btn_add_Click(object sender, EventArgs e)
         {
-            PL.FFRM_CT_ADD frm_add = new FFRM_CT_ADD();
+             PL.FFRM_CT_ADD frm_add = new FFRM_CT_ADD();
             frm_add.id= 0;
             //frm_add.btn_add.Text = "Ekle";
             frm_add.Show();
 
 
+        }
+
+        private void guna2Button2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_update_Click(object sender, EventArgs e)
+        {
+            update_data();
+        }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            PL.FRM_Cat frm_add = new FRM_Cat();
+            frm_add.id = 0;
+            //frm_add.btn_add.Text = "Ekle";
+            frm_add.Show();
+ 
+        }
+
+        private void guna2Button2_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_update_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_delete_Click_1(object sender, EventArgs e)
+        {
+            Toast toast = new Toast();
+            Dialog dialog = new Dialog();
+            try
+            {
+                id = Convert.ToInt32(tileView1.GetFocusedRowCellValue("ID"));
+                var rs = MessageBox.Show("Silme İşlemi", "bu Işlemden Emin misiniz?", MessageBoxButtons.YesNo);
+                if (rs == DialogResult.Yes)
+                {
+                    tB_cat = db.TB_CAT.Where(x => x.ID == id).FirstOrDefault();
+                    db.Entry(tB_cat).State = EntityState.Deleted;
+                    db.SaveChanges();
+                    update_data();
+                }
+
+            }
+            catch
+            {
+
+
+            }
         }
     }
 }

@@ -7,19 +7,26 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using satışş.PL;
 
 namespace satışş
 {
+    
     public partial class Main : Form
     {
         //init Form
-        
+      
         PL.FRM_Cat frm_cat = new PL.FRM_Cat();
         PL.FRM_HOME frm_home = new PL.FRM_HOME();
+        SATIŞEntities db = new SATIŞEntities();
+     
         public Main()
+          
         {
             InitializeComponent();
         }
+
+        
         //exit app
         private void bunifuImageButton1_Click(object sender, EventArgs e)
         {
@@ -41,7 +48,6 @@ namespace satışş
         //اسمه btn_home
         private void bunifuImageButton6_Click_1(object sender, EventArgs e)
         {
-
            
 
 
@@ -105,10 +111,22 @@ namespace satışş
         }
         //btn_cat
         //load cat
-        private void bunifuImageButton12_Click(object sender, EventArgs e)
+        private void btn_add_Click(object sender, EventArgs e)
         {
+           
+
+            
+
+
             con.Controls.Clear();
             con.Controls.Add(frm_cat.pan_cat);
+            //كل الفورمات تنقل للفورمة القادمة
+            PL.FFRM_CT_ADD frm_add = new FFRM_CT_ADD();
+            frm_add.id = 0;
+           // frm_add.btn_add.Text = "Ekle";
+            frm_add.Show();
+            db = new SATIŞEntities();
+            frm_cat.gridControl1.DataSource = db.TB_CAT.ToList();
 
         }
 
@@ -135,8 +153,11 @@ namespace satışş
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            
             con.Controls.Clear();
-            con.Controls.Add(frm_home.pn_home); 
+            con.Controls.Add(frm_home.pn_home);
+
+           
         }
 
         private void label11_Click(object sender, EventArgs e)
@@ -146,6 +167,22 @@ namespace satışş
 
         private void bunifuCards1_Paint(object sender, PaintEventArgs e)
         {
+
+        }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_cat_Click(object sender, EventArgs e)
+        {
+            this.IsMdiContainer = true;
+
+            PL.FRM_HOME home = new FRM_HOME();
+            home.MdiParent = this;
+            home.Show();
+
 
         }
     }

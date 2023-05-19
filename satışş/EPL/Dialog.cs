@@ -21,5 +21,10 @@ namespace satışş.EPL
         {
             this.Close();
         }
+
+        private void txt_caption_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
