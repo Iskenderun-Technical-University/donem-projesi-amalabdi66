@@ -1,3 +1,4 @@
+[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/uelKf0-p)
 
 ## AMAC
 Satış yönetimi proje programlamasına ihtiyacınız var çünkü satın alma ve satış, depolama ve üretim süreçlerinin verimliliğini artırmaya yardımcı olabilir. Ve sistem iyi çalıştığında zamandan ve emekten tasarruf edebilir ve müşteri deneyimini iyileştirebilir. Sistem aynı zamanda iş performansını izleyebilir, satış ve stok verilerini analiz edebilir, bu verilerden hareketle performans ve karlılığı artıracak doğru kararlar alınabilir. Sonuç olarak, bir satış yönetimi projesini programlamak, operasyonları kolaylaştırmaya, performansı artırmaya ve müşteri deneyimini iyileştirmeye yardımcı olabilir ve iyi ve ödüllendirici bir proje olabilir.
