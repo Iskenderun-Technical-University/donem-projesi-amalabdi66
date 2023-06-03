@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="satış_yönetimiModelStoreContainer" CdmEntityContainer="satış_yönetimiEntities">
+    <EntitySetMapping Name="Table_login">
+      <EntityTypeMapping TypeName="satış_yönetimiModel.Table_login">
+        <MappingFragment StoreEntitySet="Table_login">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="kullanıcı" ColumnName="kullanıcı" />
+          <ScalarProperty Name="şifre" ColumnName="şifre" />
+          <ScalarProperty Name="tarih" ColumnName="tarih" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TB_CAT">
+      <EntityTypeMapping TypeName="satış_yönetimiModel.TB_CAT">
+        <MappingFragment StoreEntitySet="TB_CAT">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="CAT_Name" ColumnName="CAT_Name" />
+          <ScalarProperty Name="CAT_Cover" ColumnName="CAT_Cover" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TB_Supp">
+      <EntityTypeMapping TypeName="satış_yönetimiModel.TB_Supp">
+        <MappingFragment StoreEntitySet="TB_Supp">
+          <ScalarProperty Name="supp_image" ColumnName="supp_image" />
+          <ScalarProperty Name="supp_email" ColumnName="supp_email" />
+          <ScalarProperty Name="supp_phone" ColumnName="supp_phone" />
+          <ScalarProperty Name="supp_name" ColumnName="supp_name" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TB_PUR">
+      <EntityTypeMapping TypeName="satış_yönetimiModel.TB_PUR">
+        <MappingFragment StoreEntitySet="TB_PUR">
+          <ScalarProperty Name="pur_tpro" ColumnName="pur_tpro" />
+          <ScalarProperty Name="pur_tbuy" ColumnName="pur_tbuy" />
+          <ScalarProperty Name="pur_tset" ColumnName="pur_tset" />
+          <ScalarProperty Name="pur_qu" ColumnName="pur_qu" />
+          <ScalarProperty Name="pur_set" ColumnName="pur_set" />
+          <ScalarProperty Name="pur_buy" ColumnName="pur_buy" />
+          <ScalarProperty Name="pur_det" ColumnName="pur_det" />
+          <ScalarProperty Name="pur_supp" ColumnName="pur_supp" />
+          <ScalarProperty Name="pur_cat" ColumnName="pur_cat" />
+          <ScalarProperty Name="pur_type" ColumnName="pur_type" />
+          <ScalarProperty Name="pur_name" ColumnName="pur_name" />
+          <ScalarProperty Name="supp_id" ColumnName="supp_id" />
+          <ScalarProperty Name="cat_id" ColumnName="cat_id" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TB_cus">
+      <EntityTypeMapping TypeName="satış_yönetimiModel.TB_cus">
+        <MappingFragment StoreEntitySet="TB_cus">
+          <ScalarProperty Name="supp_image" ColumnName="supp_image" />
+          <ScalarProperty Name="supp_email" ColumnName="supp_email" />
+          <ScalarProperty Name="supp_phone" ColumnName="supp_phone" />
+          <ScalarProperty Name="supp_name" ColumnName="supp_name" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_sell">
+      <EntityTypeMapping TypeName="satış_yönetimiModel.tb_sell">
+        <MappingFragment StoreEntitySet="tb_sell">
+          <ScalarProperty Name="sell_date" ColumnName="sell_date" />
+          <ScalarProperty Name="sell_tprice" ColumnName="sell_tprice" />
+          <ScalarProperty Name="sell_qt" ColumnName="sell_qt" />
+          <ScalarProperty Name="sell_price" ColumnName="sell_price" />
+          <ScalarProperty Name="sell_cus" ColumnName="sell_cus" />
+          <ScalarProperty Name="sell__name" ColumnName="sell__name" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_users">
+      <EntityTypeMapping TypeName="satış_yönetimiModel.tb_users">
+        <MappingFragment StoreEntitySet="tb_users">
+          <ScalarProperty Name="USER_STATE" ColumnName="USER_STATE" />
+          <ScalarProperty Name="USER_ROL" ColumnName="USER_ROL" />
+          <ScalarProperty Name="USER_PASS" ColumnName="USER_PASS" />
+          <ScalarProperty Name="USER_NAME" ColumnName="USER_NAME" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="f02c4481b8384fa18923e0ffab2294cd" Name="Diagram1">
+        <EntityTypeShape EntityType="satış_yönetimiModel.Table_login" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="satış_yönetimiModel.TB_CAT" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="satış_yönetimiModel.TB_Supp" Width="1.5" PointX="0.75" PointY="3.75" />
+        <EntityTypeShape EntityType="satış_yönetimiModel.TB_PUR" Width="1.5" PointX="5" PointY="1.25" />
+        <AssociationConnector Association="satış_yönetimiModel.FK_TB_PUR_TB_CAT" />
+        <AssociationConnector Association="satış_yönetimiModel.FK_TB_PUR_TB_Supp" ManuallyRouted="true" >
+          <ConnectorPoint PointX="2.25" PointY="5.922587890625" />
+          <ConnectorPoint PointX="2.25" PointY="7.3005118023800355" />
+          <ConnectorPoint PointX="2.5833329893648624" PointY="7.3005118023800355" />
+          <ConnectorPoint PointX="3.9583329893648624" PointY="10.09811489594329" />
+          <ConnectorPoint PointX="4.906249581836164" PointY="10.09811489594329" />
+          <ConnectorPoint PointX="4.906249581836164" PointY="9.5570596356343458" />
+          <ConnectorPoint PointX="4.1666663736104965" PointY="9.5570596356343458" />
+          <ConnectorPoint PointX="5.5416663736104965" PointY="6.7353831628322505" />
+          <ConnectorPoint PointX="5" PointY="6.7353831628322505" />
+          <ConnectorPoint PointX="5" PointY="5.3456022135416656" />
+        </AssociationConnector>
+        <EntityTypeShape EntityType="satış_yönetimiModel.TB_cus" Width="1.5" PointX="0.75" PointY="6.75" />
+        <EntityTypeShape EntityType="satış_yönetimiModel.tb_sell" Width="1.5" PointX="3.125" PointY="5.375" />
+        <EntityTypeShape EntityType="satış_yönetimiModel.tb_users" Width="1.5" PointX="5.375" PointY="6.75" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

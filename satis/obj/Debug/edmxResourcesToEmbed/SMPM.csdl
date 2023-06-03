@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="satış_yönetimiModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Table_login">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="kullanıcı" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="şifre" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="tarih" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="TB_CAT">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CAT_Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CAT_Cover" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <NavigationProperty Name="TB_PUR" Relationship="satış_yönetimiModel.FK_TB_PUR_TB_CAT" FromRole="TB_CAT" ToRole="TB_PUR" />
+  </EntityType>
+  <EntityContainer Name="satış_yönetimiEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Table_login" EntityType="Self.Table_login" />
+    <EntitySet Name="TB_CAT" EntityType="Self.TB_CAT" />
+    <EntitySet Name="TB_Supp" EntityType="satış_yönetimiModel.TB_Supp" />
+    <EntitySet Name="TB_PUR" EntityType="satış_yönetimiModel.TB_PUR" />
+    <AssociationSet Name="FK_TB_PUR_TB_CAT" Association="satış_yönetimiModel.FK_TB_PUR_TB_CAT">
+      <End Role="TB_CAT" EntitySet="TB_CAT" />
+      <End Role="TB_PUR" EntitySet="TB_PUR" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TB_PUR_TB_Supp" Association="satış_yönetimiModel.FK_TB_PUR_TB_Supp">
+      <End Role="TB_Supp" EntitySet="TB_Supp" />
+      <End Role="TB_PUR" EntitySet="TB_PUR" />
+    </AssociationSet>
+    <EntitySet Name="TB_cus" EntityType="satış_yönetimiModel.TB_cus" />
+    <EntitySet Name="tb_sell" EntityType="satış_yönetimiModel.tb_sell" />
+    <EntitySet Name="tb_users" EntityType="satış_yönetimiModel.tb_users" />
+  </EntityContainer>
+  <EntityType Name="TB_Supp">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="supp_name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="supp_phone" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="supp_email" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="supp_image" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <NavigationProperty Name="TB_PUR" Relationship="satış_yönetimiModel.FK_TB_PUR_TB_Supp" FromRole="TB_Supp" ToRole="TB_PUR" />
+  </EntityType>
+  <EntityType Name="TB_PUR">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="cat_id" Type="Int32" />
+    <Property Name="supp_id" Type="Int32" />
+    <Property Name="pur_name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="pur_type" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="pur_cat" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="pur_supp" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="pur_det" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="pur_buy" Type="Double" />
+    <Property Name="pur_set" Type="Double" />
+    <Property Name="pur_qu" Type="Double" />
+    <Property Name="pur_tset" Type="Double" />
+    <Property Name="pur_tbuy" Type="Double" />
+    <Property Name="pur_tpro" Type="Double" />
+    <NavigationProperty Name="TB_CAT" Relationship="satış_yönetimiModel.FK_TB_PUR_TB_CAT" FromRole="TB_PUR" ToRole="TB_CAT" />
+    <NavigationProperty Name="TB_Supp" Relationship="satış_yönetimiModel.FK_TB_PUR_TB_Supp" FromRole="TB_PUR" ToRole="TB_Supp" />
+  </EntityType>
+  <Association Name="FK_TB_PUR_TB_CAT">
+    <End Type="satış_yönetimiModel.TB_CAT" Role="TB_CAT" Multiplicity="0..1" />
+    <End Type="satış_yönetimiModel.TB_PUR" Role="TB_PUR" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_CAT">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TB_PUR">
+        <PropertyRef Name="cat_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TB_PUR_TB_Supp">
+    <End Type="satış_yönetimiModel.TB_Supp" Role="TB_Supp" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="satış_yönetimiModel.TB_PUR" Role="TB_PUR" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_Supp">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TB_PUR">
+        <PropertyRef Name="supp_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="TB_cus">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="supp_name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="supp_phone" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="supp_email" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="supp_image" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="tb_sell">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="sell__name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="sell_cus" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="sell_price" Type="Double" />
+    <Property Name="sell_qt" Type="Double" />
+    <Property Name="sell_tprice" Type="Double" />
+    <Property Name="sell_date" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="tb_users">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="USER_NAME" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="USER_PASS" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="USER_ROL" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="USER_STATE" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+</Schema>
